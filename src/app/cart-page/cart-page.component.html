@@ -1,0 +1,21 @@
+<div class="relative justify-center gap-4 flex flex-wrap items-center mt-10  w-full">
+    <h1>this is cart page</h1>
+    <ng-container *ngFor="let book of books">
+        <div>
+            <div class="w-56 border text-center">
+                <ng-container >
+                    <div class="p-2">
+                        <img class=" rounded-md" width="100%" src={{book.image}} alt="" >
+                        <div class="p-2 flex flex-col justify-center">
+                            <h3>{{book.name}}</h3>
+                            <p class="text-gray-500 font-semibold text-sm">{{book.author }}</p>
+                            <strong>Price: {{book.price | currency:'INR'}}</strong>
+                            <button  class=" rounded-lg px-4 py-2 bg-blue-600 hover:bg-blue-400">REMOVE</button>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+            
+    </div>
+    </ng-container>
+</div>

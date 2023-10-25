@@ -1,0 +1,7 @@
+<div class="relative justify-center gap-4 flex flex-wrap items-center mt-10  w-full">
+    <ng-container *ngFor="let book of books">
+        <div>
+        <app-book (addToCartEvent)="addToCart($event)" [book]="book"></app-book>
+    </div>
+    </ng-container>
+</div>

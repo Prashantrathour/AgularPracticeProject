@@ -1,0 +1,13 @@
+<div class="w-56 border text-center">
+    <ng-container >
+        <div class="p-2">
+            <img class=" rounded-md" width="100%" src={{book.image}} alt="" >
+            <div class="p-2 flex flex-col justify-center">
+                <h3>{{book.name}}</h3>
+                <p class="text-gray-500 font-semibold text-sm">{{book.author }}</p>
+                <strong>Price: {{book.price | currency:'INR'}}</strong>
+                <button (click)="addToCart(book)" class=" rounded-lg px-4 py-2 bg-blue-600 hover:bg-blue-400">Add to Cart</button>
+            </div>
+        </div>
+    </ng-container>
+</div>
